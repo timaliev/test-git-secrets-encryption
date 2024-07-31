@@ -1,0 +1,31 @@
+version: "1.0"
+users:
+    - name: admin
+      uid: 1001
+      password: ENC[AES256_GCM,data:hp7V0Q2kE963omwNzmo=,iv:zD0ot8lyHKq4rJ9DuWhTug4msFRxKTMucOvOtRCkjPI=,tag:RBA/+/6MAwJHP9lowG9dvg==,type:str]
+      shell: ENC[AES256_GCM,data:+nImGfKQvaM3,iv:tm70RBIwxH2iukQismy38qYGgxe5AipD3+XU55XcvEM=,tag:RqAXNuM2OEubRrucSujNuw==,type:str]
+    - name: operator
+      uid: 1002
+      password: ENC[AES256_GCM,data:HC4aZAFkFH6CUf13,iv:v3xRiT8OE+X0iG9UvXNDiAAG02GBx8x8+TPDeS8zcj8=,tag:aQyGKNc1+N5HnZEma2vorg==,type:str]
+      shell: ENC[AES256_GCM,data:hxWOPbbybFE=,iv:mecJ7A4IN3zKimhOpjXosdKWs9sd7eglU3R7nlI0OkI=,tag:lHE2MPv6KTgy/0IX1G8ZHQ==,type:str]
+update: true
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1dp5w028hlxnegr6mqkfnvyqdd9e6pmzcflexcurw2sgszvrfnp5svkxq0a
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYMnEvcnduVmxMWWFmV0dL
+            bThFNXBSL1FraEI0R1VLTWFDT0NobU1ETXhvClZiM1U1ZjAxaXdyYzJBU1FUSmht
+            L0c5Rk92bkRaZ3lxbU93TzJJWGJOb28KLS0tIHIyaFYzbzhld2dHUFJDREF2ajBk
+            MCtEZG54SFcyWDRiQ0dEcU5sQXNNK0EKFp4vQBDy3WEqgnPYkVB3h95G/IUXpg3h
+            mzhGhDUxb6G2AbpuPfxaQFCslA0bsZK/95Nqi2oopSNNBDpIxHAZ+g==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2024-07-31T15:57:16Z"
+    mac: ENC[AES256_GCM,data:GOAdCvBPLAPKpor750zDRMe443PohLdju1Jvgw18vAXDuI7EKnWwVZGtBIKQ2oa9qHrYVT5PyVOEq3iiCXEx/SzaIELRreYaqHwsRb9kkXnFRA0CRNf9Frmba/gQ8N6mUqOJdGZqNYXMUeZhUYYol6h/ri8lwrDUuthVrzJjFYg=,iv:d7oQsYoOgXNsnr+xW6XbG1sMEvccjHWStTH57E00u/o=,tag:ky9AnWcDIBbfpMZ2Y53oqg==,type:str]
+    pgp: []
+    encrypted_regex: ^(password|shell)$
+    version: 3.9.0
