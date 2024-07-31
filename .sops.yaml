@@ -9,10 +9,10 @@ stores:
   dotenv:
     indent: 2
 creation_rules:
-  - path_regex: sub/.*
+  # - path_regex: sub/.*
   - path_regex: \.conf$
   # - path_regex: \.txt$
-  - path_regex: \.yaml$
+  # - path_regex: \.yaml$
   - path_regex: ^\.env$
   - path_regex: \.ini$
   # - path_regex: ^users.yaml$
