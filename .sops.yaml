@@ -1,6 +1,20 @@
 # creation rules are evaluated sequentially, the first match wins
+stores:
+  json:
+    indent: 2
+  json_binary:
+    indent: 2
+  yaml:
+    indent: 2
+  dotenv:
+    indent: 2
 creation_rules:
-  # - path_regex: \.sh$
+  - path_regex: sub/.*
+  - path_regex: \.conf$
   # - path_regex: \.txt$
-  - path_regex: secrets/.*
-  - encrypted_regex: ^(password|shell)$
+  - path_regex: \.yaml$
+  - path_regex: ^\.env$
+  - path_regex: \.ini$
+  # - path_regex: ^users.yaml$
+  - encrypted_regex: ^(TOKEN|SECRET|password)$
+  # - encrypted_regex: .*
