@@ -1,0 +1,4 @@
+/sub/secrets/** diff=sops
+# /sub/secrets/file1 -diff
+# file1 -diff
+# sub/secrets/* diff=sops
