@@ -1,4 +1,7 @@
-/sub/secrets/** diff=sops
-# /sub/secrets/file1 -diff
+# sub/secrets/** diff=sops
+sub/secrets/file1 diff=sops
+sub/secrets/file2 -diff
+sub/secrets/file1 diff=ansible
 # file1 -diff
 # sub/secrets/* diff=sops
+sub/secrets/file1 diff=age
