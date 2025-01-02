@@ -13,5 +13,5 @@ sub/test.ini diff=sops
 testfile.ini diff=sops
 users.yaml diff=sops
 .env diff=sops
-env.ini diff=sops
 sub/secrets/file3.md diff=sops
+env.ini diff=sops
