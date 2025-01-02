@@ -1,7 +1,17 @@
 # sub/secrets/** diff=sops
-sub/secrets/file1 diff=sops
-sub/secrets/file2 -diff
-sub/secrets/file1 diff=ansible
 # file1 -diff
 # sub/secrets/* diff=sops
-sub/secrets/file1 diff=age
+.env diff=sops
+env.conf diff=sops
+env.ini diff=sops
+new.conf diff=sops
+new.unenc.conf diff=sops
+sub/more-users.yaml diff=sops
+sub/secrets/file1 diff=sops
+sub/secrets/file2 diff=sops
+sub/secrets/topsecret.txt diff=sops
+sub/secrets/users.yaml diff=sops
+sub/test.ini diff=sops
+testfile.ini diff=sops
+users.yaml diff=sops
+sub/secrets/file3.md diff=sops
