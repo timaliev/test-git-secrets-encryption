@@ -1,9 +1,7 @@
 # sub/secrets/** diff=sops
 # file1 -diff
 # sub/secrets/* diff=sops
-.env diff=sops
 env.conf diff=sops
-env.ini diff=sops
 new.conf diff=sops
 new.unenc.conf diff=sops
 sub/more-users.yaml diff=sops
@@ -14,4 +12,6 @@ sub/secrets/users.yaml diff=sops
 sub/test.ini diff=sops
 testfile.ini diff=sops
 users.yaml diff=sops
+.env diff=sops
+env.ini diff=sops
 sub/secrets/file3.md diff=sops
